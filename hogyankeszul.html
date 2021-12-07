@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #1e90ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1e90ff;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  background-color: #1e90ff;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>domjantt6 music</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Kezdőlap</a>
+  <a href="zene.html">Zenék</a>
+  <a href="#">Hogyan készül?</a>
+  <a href="leiras.html">Leírás</a>
+</div>
+
+<h1>Hogyan készül?</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://boscaceoil.net">
+      <img src="boscaceoil1.png"  width="600" height="400">
+    </a>
+    <div class="desc">1. Bosca Ceoil<br>Zene megalkotása</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://support.microsoft.com/hu-hu/windows/a-microsoft-paint-megnyitása-ead1dc5c-abc4-fd2c-d81e-ebb013fbc113">
+      <img src="paint.png"  width="600" height="400">
+    </a>
+    <div class="desc">2. Paint<br>Borítókép elkészítése</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.kapwing.com">
+      <img src="kapwing.png"  width="600" height="400">
+    </a>
+    <div class="desc">3. Kapwing<br>Borítókép rávávgása a hangra</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.youtube.com/watch?v=aaqwoYg00hg">
+      <img src="publikalas.png"  width="600" height="400">
+    </a>
+    <div class="desc">4. YouTube<br>Dal publikálása</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<p><q>A jó nem jó, ha jobbat várnak.</q></p>
+<P>-Vin Scully</P>
+
+<div class="footer">
+  <p>Youtube: <a href="https://www.youtube.com/channel/UCJWWKU1X-CkLJTbCJDDsUzQ/featured">domjantt6</a></p>
+</div>
+
+</body>
+</html>

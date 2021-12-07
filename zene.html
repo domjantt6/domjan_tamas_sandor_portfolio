@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #1e90ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1e90ff;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  background-color: #1e90ff;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>domjantt6 music</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Kezdőlap</a>
+  <a href="#">Zenék</a>
+  <a href="hogyankeszul.html">Hogyan készül?</a>
+  <a href="leiras.html">Leírás</a>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.youtube.com/channel/UCJWWKU1X-CkLJTbCJDDsUzQ">
+      <img src="kerdojel.png"  width="600" height="400">
+    </a>
+    <div class="desc">Tudod mi a kedvenc részem a játékban? A lehetőség a játékra.<br>-Mike Singletary</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.youtube.com/watch?v=aaqwoYg00hg">
+      <img src="publikalas.png"  width="600" height="400">
+    </a>
+    <div class="desc">67</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.youtube.com/watch?v=tNLhjI1kYLw">
+      <img src="tolk.png"  width="600" height="400">
+    </a>
+    <div class="desc">tolk</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.youtube.com/watch?v=E4V0FGXg2wI">
+      <img src="gut.png"  width="600" height="400">
+    </a>
+    <div class="desc">gut</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<p><q>Amikor nyersz, ne mondj semmit, amikor veszítesz, mondj még kevesebbet.</q></p>
+<P>-Paul Brown</P>
+
+<div class="footer">
+  <p>Youtube: <a href="https://www.youtube.com/channel/UCJWWKU1X-CkLJTbCJDDsUzQ/featured">domjantt6</a></p>
+</div>
+
+</body>
+</html>

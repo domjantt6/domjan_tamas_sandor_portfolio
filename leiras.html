@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #1e90ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1e90ff;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  background-color: #1e90ff;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>domjantt6 music</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Kezdőlap</a>
+  <a href="zene.html">Zenék</a>
+  <a href="hogyankeszul.html">Hogyan készül?</a>
+  <a href="#">Leírás</a>
+</div>
+
+<h2>Oldalterv</h2>
+<img src="hazi.png" >
+<p>Eredetileg a gyűjteményemből akartam pár lapot feltölteni, ezért is választottam a kék és a szürke színt(csapatszínek).<br>Végül megváltoztattam és a <q>zenéimet</q> linkeltem be.</p>
+
+<h2>Felhasznált segédanyagok</h2>
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+<div class="footer">
+  <p>Youtube: <a href="https://www.youtube.com/channel/UCJWWKU1X-CkLJTbCJDDsUzQ/featured">domjantt6</a></p>
+  <p><q>Ha megépíted, eljön hozzád.</q></p>
+  <p>-Baseball álmok</p>
+</div>
+
+</body>
+</html>

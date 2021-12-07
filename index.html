@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #1e90ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1e90ff;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  background-color: #1e90ff;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>domjantt6 music</h1>
+</div>
+
+
+
+<div class="topnav">
+  <a href="#">Kezdőlap</a>
+  <a href="zene.html">Zenék</a>
+  <a href="hogyankeszul.html">Hogyan készül?</a>
+  <a href="leiras.html">Leírás</a>
+</div>
+
+
+
+
+<div class="row">
+  <div class="column">
+    <h2>Ki vagyok én?</h2>
+    <p>Tudd a különbséget a híres és a nagyszerű között.</p>
+    <p>-Deacon Jones</p>
+  </div>
+  
+  <div class="column">
+    <h2>Miért csinálom?</h2>
+    <p>Minden strike közelebb visz a következő home runhoz.</p>
+    <p>-Babe Ruth</p>
+  </div>
+  
+  <div class="column">
+    <h2>Mi határozza meg a művészetem?</h2>
+    <p>Ha valami használna a nemzetemnek, s ártana egy másiknak, nem javasolnám uralkodómnak, mert elsősorban ember vagyok, s csak azután francia; szükségszerűen ember, s véletlenül francia.</p>
+    <p>-Montesquieu</p>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>Youtube: <a href="https://www.youtube.com/channel/UCJWWKU1X-CkLJTbCJDDsUzQ/featured">domjantt6</a></p>
+</div>
+
+</body>
+</html>
